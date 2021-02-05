@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: muli;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  background-color: #fff !important;
 }
+.navbar-brand{
+  font-size: 1.9rem;
+  color:#565387;
+}
+
+.navbar a{
+  font-size:1.3rem;
+  text-transform: capitalize;
+}
+
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+.navbar a:hover{
+  color:#db34a9 !important;
+}
+
+/*{ Main home page }*/
+
+#header{
+
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#header .brand-name{
+  color:#3498db;
+}
+
+#header h2{
+  color : #484848;
+  font-size: 24px;
+}
+
+#header .btn-get-started{
+  color:#3498db;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+  padding: 10px 30px;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover{
+  background-color:#6dc1f8;;
+  color:#fff;
+}
+
+.header-img{
+  text-align: right;
+}
+
+#header .animated {
+  
+  animation: moves 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes moves {
+  0%{
+    transform: translate(15px);
+
+  }
+100%{
+  transform: translateY(-30px);
+}
+}
+
